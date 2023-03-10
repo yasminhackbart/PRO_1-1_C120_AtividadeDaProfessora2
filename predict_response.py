@@ -57,12 +57,5 @@ def bot_response(user_input):
         bot_response = random.choice(intent['responses'])
         return bot_response
 
-print("Oi, eu sou a Estela, como posso ajudar?")
-
-while True:
-    user_input = input("Digite sua mensagem aqui:")
-    print("Entrada do Usuário: ", user_input)
-
-    response = bot_response(user_input)
-    print("Resposta do Robô: ", response)
+// crie o chatbot
 
