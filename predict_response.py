@@ -12,12 +12,10 @@ ignore_words = ['?', '!',',','.', "'s", "'m"]
 import tensorflow
 from data_preprocessing import get_stem_words
 
+#carregue o modelo
 model = tensorflow.keras.models.load_model('./chatbot_model.h5')
 
 # Carregue os arquivos de dados
-intents = json.loads(open('./intents.json').read())
-words = pickle.load(open('./words.pkl','rb'))
-classes = pickle.load(open('./classes.pkl','rb'))
 
 
 def preprocess_user_input(user_input):
@@ -54,10 +52,12 @@ def bot_response(user_input):
 
    for intent in intents['intents']:
     if intent['tag']==predicted_class:
-        bot_response = random.choice(intent['responses'])
-        return bot_response
+        #faça ele responder aleatoriamente
+       
+        #retorne a resposta do bot
+        
 
-    //crie o chatbot
+    #crie o chatbot
 
 
 
