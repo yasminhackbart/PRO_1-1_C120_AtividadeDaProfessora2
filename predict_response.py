@@ -47,17 +47,7 @@ def bot_class_prediction(user_input):
 
 def bot_response(user_input):
 
-   predicted_class_label =  bot_class_prediction(user_input)
-   predicted_class = classes[predicted_class_label]
-
-   for intent in intents['intents']:
-    if intent['tag']==predicted_class:
-        #faça ele responder aleatoriamente
-       
-        #retorne a resposta do bot
-        
-
-    #crie o chatbot
+  
 
 
 
